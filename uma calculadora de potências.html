@@ -10,8 +10,8 @@
     <script> 
     
     function lerDados(){
-    let numero = parseInt(prompt("Qual número será elevado?"));
-    let potencia = parseInt(prompt("Elevado a qual potência?"));
+    let numero = parseInt(prompt("Qual número será elevado?")); //parseint - definindo o limite de apenas números inteiros
+    let potencia = parseInt(prompt("Elevado a qual potência?"));//parseint - definindo o limite de apenas números inteiros
 
     return validar(numero, potencia);
 }
@@ -26,7 +26,7 @@ function validar(numero, potencia){
         throw new Error("Calcula somente números positivos..."); 
     }
 
-    // retorna um array com os valores
+    // retorna um array com os valores // qq é array t.t
     return [numero, potencia];
 }
 
